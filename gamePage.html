@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Game Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/game.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="content">
+      <div class="gameheader">
+        <div id="countdown">
+          <p>0:</p>
+          <p id="timer">60</p>
+        </div>
+        <div id="fuseline">
+          fuse
+        </div>
+        <div id="bomb">
+          <img src="https://cdn.discordapp.com/attachments/1194364147132022879/1195134331715326034/simple_logo-removebg-preview.png?ex=65b2e295&is=65a06d95&hm=7a1c097157995f0c037f2259&" alt="bombpic">
+        </div>
+      </div>
+      <!-- <div class="header">
+        <p>0:</p>
+        <p class="timecountdown" id="timer">60</p>
+        <div>
+          fuse
+        </div>
+          
+        </div>
+      </div> -->
+      
+      <canvas id="drawingCanvas"></canvas>
+      
+      <button onclick="saveCanvas()">save picture</button>
+      <script src="assets/js/gameScript.js"></script>
+     
+      <!-- save picture and copy to clipboard -->
+    </div>
+    
+  </body>
+</html>
+
