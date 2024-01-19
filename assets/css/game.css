@@ -43,9 +43,9 @@ canvas {
 #bomb {
 width: 20%
 }
-#bomb img{
-  /* border-style: solid; */
-  height: 7rem;
+#bomb video{
+  height: 100px;
+  width: 300px;
 }
 
 button {
