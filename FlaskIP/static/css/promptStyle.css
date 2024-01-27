@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F5EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column; /* Center content vertically */
+}
+
+h1, h2, h3 {
+    text-align: center; /* Center the text */
+}
+
+h1 {
+    font-size: 24px;
+    color: #3a3a3a;
+    margin-top: -250px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #3a3a3a;
+}
+
+h3 {
+    font-size: 24px;
+    color: #3a3a3a;
+}
+
+.prompt-header img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-accept,
+.btn-cancel {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-accept {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-cancel {
+    background-color: #ccc;
+    color: #333;
+}
+

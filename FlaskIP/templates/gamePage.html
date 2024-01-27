@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Game Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/game.css') }}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="content">
+      <div class="gameheader">
+        <div id="countdown">
+          <p>0:</p>
+          <p id="timer">60</p>
+        </div>
+        <div id="fuseline">
+          fuse
+        </div>
+        <div id="bomb">
+          <video autoplay muted>
+            <source src="{{ url_for('static', filename='images/doodlebombcountdown.mp4') }}" type="video/mp4">
+          </video>
+        </div>
+
+        </div>
+      <!-- <div class="header">
+        <p>0:</p>
+        <p class="timecountdown" id="timer">60</p>
+        <div>
+          fuse
+        </div>
+          
+        </div>
+      </div> -->
+      
+      <canvas id="drawingCanvas"></canvas>
+      
+      <button onclick="saveCanvas()">save picture</button>
+      <script src="{{ url_for('static', filename='js/gameScript.js') }}"></script>
+     
+      <!-- save picture and copy to clipboard -->
+    </div>
+    
+  </body>
+</html>
+
