@@ -3,6 +3,9 @@ const canvas = document.getElementById('drawingCanvas');
 const context = canvas.getContext('2d');
 canvas.width = 450;
 canvas.height = 400;
+let color1 = 'red';
+let color2 = 'green';
+let color3 = 'blue';
 
 // Set initial variables for drawing
 let isDrawing = false;
@@ -88,9 +91,41 @@ function draw(e) {
 function stopDrawing() {
   isDrawing = false;
 }
+// shuffleColor
+function changeToColor1(){
+  context.strokeStyle = color1;
+}
+function changeToColor2(){
+  context.strokeStyle = color2;
+}
+function changeToColor3(){
+  context.strokeStyle = color3;
+}
+function getRandomColor() {
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+function shuffleColor(){
+  let colorButton1 = document.getElementById('color1');
+  let colorButton2 = document.getElementById('color2');
+  let colorButton3 = document.getElementById('color3');
+  let c1 = getRandomColor();
+  let c2 = getRandomColor();
+  let c3 = getRandomColor();
+  colorButton1.style.backgroundColor = c1;
+  color1=c1;
+  colorButton2.style.backgroundColor = c2;
+  color2=c2;
+  colorButton3.style.backgroundColor = c3;
+  color3=c3;
 
+}
 function changeColor(color) {
-  context.strokeStyle = color;
+  console.log(color);
+  context.strokeStyle = String(color);
+  // context.strokeStyle = "rgb(235, 84, 52)";
 }
 
 // Event listeners to handle drawing

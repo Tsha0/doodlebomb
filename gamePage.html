@@ -29,15 +29,16 @@
       </div>
 
       <div class="prompt">
-        
+
       </div>
 
       <canvas id="drawingCanvas"></canvas>
 
       <div id="colorSelection">
-        <div class="colorCircle" style="background-color: red;" onclick="changeColor('red')"></div>
-        <div class="colorCircle" style="background-color: green;" onclick="changeColor('green')"></div>
-        <div class="colorCircle" style="background-color: blue;" onclick="changeColor('blue')"></div>
+        <div id="color1" class="colorCircle" style="background-color: red;" onclick="changeToColor1()"></div>
+        <div id="color2" class="colorCircle" style="background-color: green;" onclick="changeToColor2()"></div>
+        <div id="color3" class="colorCircle" style="background-color: blue;" onclick="changeToColor3()"></div>
+        <div class="colorCircle" onclick="shuffleColor()"><img src="https://cdn.discordapp.com/attachments/1194364147132022879/1203460154176053379/image.png?ex=65d12c9b&is=65beb79b&hm=b6f085586a6f8d85ad4eee290ce2ef9e5c2f911b998a643b2323544b7d4d3402&" alt=""></div>
       </div>
       
       <div id="buttonContainer">

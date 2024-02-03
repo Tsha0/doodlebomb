@@ -2,9 +2,11 @@
 
 /* fuse animation */
 .fuse {
-  width: ;
+  width: 500px;
   height: 10px;
-  background-color: black; /* Red color */
+  background-
+  
+  : black; /* Red color */
   position: relative;
   animation: decreaseLength 10s linear;
 }
@@ -26,7 +28,7 @@
   text-align: center;
 }
 
-/* fuse */
+
 .countdown {
   position: relative;
 }
@@ -37,6 +39,14 @@ body {
   background-color: #F8F5EB;
   overflow:hidden;
 }
+#colorSelection {
+  height: 30px;
+  margin-top: 5px;
+  /* border-style: solid; */
+  display: flex;
+  justify-content: center;
+}
+
 .colorCircle {
   width: 20px;
   height: 20px;
@@ -44,6 +54,11 @@ body {
   display: inline-block;
   margin-right: 10px;
   cursor: pointer;
+}
+.colorCircle img{
+  margin-top:-5px;
+  width: 30px;
+  height: 30px;
 }
 .content {
   margin: 0;
@@ -64,6 +79,9 @@ canvas {
 
 #fuseline {
   width:60%;
+}
+.shuffleColor{
+  border-style: solid;
 }
 
 button {
