@@ -1,0 +1,23 @@
+
+h1 {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  grid-template-rows: repeat(2, 1fr); /* Two rows */
+  gap: 10px; /* Spacing between buttons */
+  max-width: 300px; /* Adjust as needed */
+  margin: auto; /* Center the container */
+  cursor: pointer;
+}
+

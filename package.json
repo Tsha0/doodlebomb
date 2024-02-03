@@ -1,0 +1,24 @@
+{
+  "name": "doodlebomb",
+  "version": "1.0.0",
+  "description": "doodlebomb.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tsha0/doodlebomb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tsha0/doodlebomb/issues"
+  },
+  "homepage": "https://github.com/Tsha0/doodlebomb#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsdom": "^23.2.0"
+  }
+}
