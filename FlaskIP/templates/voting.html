@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/votingStyles.css') }}"> 
+</head>
+<body>
+    <h1>WHICH DOODLEBOMB IS BEST?</h1>
+  <div class="imagesContainer"> 
+    <img src="path-to-image1.jpg" id="voteImage1" alt="Description of Image 1">
+    <img src="path-to-image2.jpg" id="voteImage2" alt="Description of Image 2">
+    <img src="path-to-image3.jpg" id="voteImage3" alt="Description of Image 3">
+    <img src="path-to-image4.jpg" id="voteImage4" alt="Description of Image 4">
+  </div>
+  
+  <h2>TAP YOUR FAVOURITE ONE TO VOTE</h2>
+  
+<!--
+    <script>
+        // Fetch drawing URLs from the backend and set them as src for the images
+        document.getElementById("voteImage1").querySelector("img").src = "backend_url/drawing1.jpg";
+        document.getElementById("voteImage2").querySelector("img").src = "backend_url/drawing2.jpg";
+        document.getElementById("voteImage3").querySelector("img").src = "backend_url/drawing3.jpg";
+        document.getElementById("voteImage4").querySelector("img").src = "backend_url/drawing4.jpg";
+
+        // Function to handle voting
+        function vote(drawingNumber) {
+            // Send voting statistics to the backend (you need to implement this part)
+            // You can use AJAX, Fetch API, or any other method to communicate with the backend
+
+            // For example, if using Fetch API:
+            fetch('backend_url/vote', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ drawingNumber }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Voting statistics:', data);
+                // Optionally, update the UI with the new voting statistics
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+  -->
+  
+</body>
+</html>
