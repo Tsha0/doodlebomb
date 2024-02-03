@@ -1,28 +1,46 @@
-
-
 /* fuse animation */
 .fuse {
-  width: ;
-  height: 10px;
-  background-color: black; /* Red color */
-  position: relative;
-  animation: decreaseLength 10s linear;
+  width: 10vw;
+  /* Initial width */
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  /* Changed to absolute */
+  left: 0;
+  /* Start from the left edge */
+  animation: decreaseLength 60s linear forwards;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.fuse img {
+  margin-left: -10px;
+  /* Adjust this value as needed to move the image more to the left */
 }
 
 @keyframes decreaseLength {
   0% {
-      width: 100vh;
+    width: 420px;
+    left: 0;
+    /* Left position at the start of the animation */
   }
+
   100% {
-      width: 0;
+    width: 0;
+    /* Width decreases */
+    left: 420px;
+    /* Left position moves to the right */
   }
 }
 
 /* header */
-.header img{
+.header img {
   height: 20px;
 }
-.header p{
+
+.header p {
   text-align: center;
 }
 
@@ -32,11 +50,13 @@
 }
 
 body {
-  margin:0;
-  padding:0;
-  background-color: #F8F5EB;
-  overflow:hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('')
+  
 }
+
 .colorCircle {
   width: 20px;
   height: 20px;
@@ -45,17 +65,36 @@ body {
   margin-right: 10px;
   cursor: pointer;
 }
+
 .content {
   margin: 0;
   padding: 0;
-  width: 450px;
+  width: 420px;
   height: 95vh;
   margin: auto;
   /* border-style: solid; */
 }
+
+.gameHeader {
+  position: relative;
+  width: 420px;
+}
+
+#countdown {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 460px;
+  transform: translateY(-40%);
+  color: red;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .countdown {
   width: 30px;
 }
+
 canvas {
   border: 1px solid black;
   margin-top: 20px;
@@ -63,7 +102,7 @@ canvas {
 }
 
 #fuseline {
-  width:60%;
+  width: 60%;
 }
 
 button {
@@ -103,7 +142,7 @@ For Extra-large size device: 1200px and more */
 #voteButton {
   background-color: #DE5E36;
   border: solid #A74628;
-  
+
 }
 
 #saveButton {
@@ -146,6 +185,4 @@ For Extra-large size device: 1200px and more */
   box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (max-width: 340px) {
-
-}
+@media screen and (max-width: 340px) {}

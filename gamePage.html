@@ -2,63 +2,72 @@
 <html>
   <head>
     <title>Game Page</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/game.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/game.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="content">
       <div class="header">
-        <p><span>
-          <img src="https://cdn.discordapp.com/attachments/1194364147132022879/1203454007113420851/image.png?ex=65d126e2&is=65beb1e2&hm=c1ab66720791b80c03f5fe996ad72cf01dc15d05d13eb09a17b4413f5a53ae74&" alt="">
-          <img src="https://cdn.discordapp.com/attachments/1194364147132022879/1203454075048304720/image.png?ex=65d126f2&is=65beb1f2&hm=df6db5d1cf226ffa4c85a5f23bd4a3b2edd5a016e4938d8f183c5dee61d0b784&" alt="">
-        </span><span></span></p>
+        <p>
+          <span>
+            <img
+              src="https://cdn.discordapp.com/attachments/1194364147132022879/1203454007113420851/image.png?ex=65d126e2&is=65beb1e2&hm=c1ab66720791b80c03f5fe996ad72cf01dc15d05d13eb09a17b4413f5a53ae74&"
+              alt=""
+            />
+            <img
+              src="https://cdn.discordapp.com/attachments/1194364147132022879/1203454075048304720/image.png?ex=65d126f2&is=65beb1f2&hm=df6db5d1cf226ffa4c85a5f23bd4a3b2edd5a016e4938d8f183c5dee61d0b784&"
+              alt=""
+            /> </span
+          ><span></span>
+        </p>
       </div>
       <div class="countdown">
-        <div class="fuse"><img src="https://cdn.discordapp.com/attachments/1194364147132022879/1203458905485873232/image.png?ex=65d12b72&is=65beb672&hm=178d5fc30e91e40b87c1d39112583f69f4f9a1a71806e4b83ed0e754aa8ed15a&" alt=""></div>
-      </div>
-
-
-      <div class="gameheader">
-        <div id="countdown">
-          <p>0:</p>
-          <p id="timer">60</p>
+        <div class="fuse">
+          <img
+            src="https://cdn.discordapp.com/attachments/1194364147132022879/1203458905485873232/image.png?ex=65d12b72&is=65beb672&hm=178d5fc30e91e40b87c1d39112583f69f4f9a1a71806e4b83ed0e754aa8ed15a&"
+            alt=""
+          />
         </div>
-        <div id="fuseline">
+        <div id="countdown">60</div>
+      </div>
+      <!-- <div class="header">
+        <p>0:</p>
+        <p class="timecountdown" id="timer">60</p>
+        <div>
           fuse
         </div>
-      </div>
-
-      <div class="prompt">
-        
-      </div>
+          
+        </div>
+      </div> -->
 
       <canvas id="drawingCanvas"></canvas>
 
       <div id="colorSelection">
-        <div class="colorCircle" style="background-color: red;" onclick="changeColor('red')"></div>
-        <div class="colorCircle" style="background-color: green;" onclick="changeColor('green')"></div>
-        <div class="colorCircle" style="background-color: blue;" onclick="changeColor('blue')"></div>
+        <div
+          class="colorCircle"
+          style="background-color: red"
+          onclick="changeColor('red')"
+        ></div>
+        <div
+          class="colorCircle"
+          style="background-color: green"
+          onclick="changeColor('green')"
+        ></div>
+        <div
+          class="colorCircle"
+          style="background-color: blue"
+          onclick="changeColor('blue')"
+        ></div>
       </div>
-      
-      <div id="buttonContainer">
 
-      
-        <button id="shareButton">
-          
-          <img src="https://cdn.discordapp.com/attachments/1194364147132022879/1203451647171362866/image.png?ex=65d124af&is=65beafaf&hm=38718c4371d5616420e88a7cea74b3626ebd44eafe134609cbcbdcbf3abe56f3&" class="charIcon">SHARE
-        </button>
-
-        <button id="saveButton">
-
-          <img src="https://cdn.discordapp.com/attachments/1194364147132022879/1203455685589991497/image.png?ex=65d12872&is=65beb372&hm=40dfaf302d7137f9670d367275a7964e9ae2cb87a39faa965f9ac94c6f719885&" class="charIcon">SAVE
-        </button>
-    </div>
       <button onclick="saveCanvas()">save picture</button>
       <script src="assets/js/gameScript.js"></script>
-     
+
       <!-- save picture and copy to clipboard -->
     </div>
-    
   </body>
 </html>
-
