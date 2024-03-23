@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F8F5EB;
-  /* Match the background color more closely */
+  background-image: url('https://cdn.discordapp.com/attachments/1194364147132022879/1203451794844418138/texture3x.png?ex=65d124d2&is=65beafd2&hm=b9a43d7b5873c49823ace384573c0057f21430bc381caab036679ea56e27e9a4&');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,58 +29,123 @@ body {
 }
 
 .title-container {
-  position: relative; /* Needed for absolute positioning of the child */
-  text-align: center; /* Center the title */
+  position: relative;
+  /* Needed for absolute positioning of the child */
+  text-align: center;
+  /* Center the title */
 }
 
+#bombImage {
+  position: relative;
+  top: -40px;
+}
 
 #titleImage {
   position: absolute;
-  top: 50%; /* Adjust these values as needed */
+  top: 50%;
+  /* Adjust these values as needed */
   left: 50%;
-  transform: translate(-50%, -50%); /* Centers the image on the title */
-  width: 500px;
+  transform: translate(-50%, -50%);
+  /* Centers the image on the title */
+  width: 350px;
   height: auto;
-  z-index: -1;
+  z-index: 1;
 }
 
 h2 {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 550;
-  margin-top: 40px;
-  margin-bottom: -8px;
+  font-weight: 520;
+  margin-top: 70px;
+  margin-bottom: -15px;
 }
 
 #countdown {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 550;
-    font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.time-container {
+    background-color: #EEEAE1;
+    background-image: url('https://cdn.discordapp.com/attachments/1194364147132022879/1203451794844418138/texture3x.png?ex=65d124d2&is=65beafd2&hm=b9a43d7b5873c49823ace384573c0057f21430bc381caab036679ea56e27e9a4&');
+    background-size: cover;
+    width: 25px; /* Decreased width */
+    height: 35px; /* Increased height */
+    border: 1.5px solid black; /* Creates the border */
+    border-radius: 15px; /* Rounds the corners */
+    margin: 0 30px;
+    padding: 20px;
     text-align: center;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.time-container .time {
+    font-size: 1em; /* You can change this as needed */
+    font-weight: bold;
+    /* You can set a specific line-height to control the space around the text */
+    line-height: 1em; 
+    display: block;
+}
+
+.time-container .label {
+    font-size: 0.4em; /* This is the smaller size for the words */
+    font-weight: 400;
 }
 
 #startButton {
-  background-color: #DF9FD7;
+  background-color: #9000FF;
+  border: solid #6B00BF;
+}
+
+#shareButton {
+  background-color: #9000FF;
+  border: solid #6B00BF;
 }
 
 #voteButton {
-  background-color: #CF6742;
+  background-color: #DE5E36;
+  border: solid #A74628;
+  
+}
+
+#saveButton {
+  background-color: #DE5E36;
+  border: solid #A74628;
+
 }
 
 #settingsButton {
   background-color: #D44962;
 }
 
+.charIcon {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  filter: invert(100%);
+}
+
 #startButton,
 #voteButton,
-#settingsButton {
-  color: black;
-  padding: 11px 40px;
+#shareButton,
+#saveButton {
+  color: white;
+  padding: 13px 140px;
   font-size: 25px;
   font-weight: 900;
   font-family: 'Montserrat', sans-serif;
-  border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -88,6 +155,6 @@ h2 {
   /* Adjust width to content */
   margin-bottom: 30px;
   /* Space below each button */
-  box-shadow: 0px 3px 0px rgba(0, 0, 0, 1);
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.15);
 }
 

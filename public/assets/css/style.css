@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8F5EB;
+  /* Match the background color more closely */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.startPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center buttons horizontally */
+  justify-content: center;
+  /* Center buttons vertically */
+  gap: 10px;
+  /* Space between buttons */
+  height: 100vh;
+  /* Full height of the viewport */
+  width: fit-content;
+  /* Adjust container width to fit the widest button */
+  margin: auto;
+  /* Center the container on the page */
+}
+
+.title-container {
+  position: relative; /* Needed for absolute positioning of the child */
+  text-align: center; /* Center the title */
+}
+
+
+#titleImage {
+  position: absolute;
+  top: 50%; /* Adjust these values as needed */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the image on the title */
+  width: 500px;
+  height: auto;
+  z-index: -1;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+  margin-top: 40px;
+  margin-bottom: -8px;
+}
+
+#countdown {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 550;
+    font-size: 20px;
+    text-align: center;
+  margin-bottom: 20px;
+}
+
+#startButton {
+  background-color: #DF9FD7;
+}
+
+#voteButton {
+  background-color: #CF6742;
+}
+
+#settingsButton {
+  background-color: #D44962;
+}
+
+#startButton,
+#voteButton,
+#settingsButton {
+  color: black;
+  padding: 11px 40px;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  /* Ensures buttons stack vertically */
+  width: 100%;
+  /* Adjust width to content */
+  margin-bottom: 30px;
+  /* Space below each button */
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 1);
+}
+

@@ -6,6 +6,10 @@ canvas.height = 400;
 let color1 = 'red';
 let color2 = 'green';
 let color3 = 'blue';
+let color4 = 'black';
+
+//set up spot element
+var spotElement = document.getElementById("spot");
 
 // Set initial variables for drawing
 let isDrawing = false;
@@ -18,7 +22,7 @@ let countdownInterval;
 
 // Function to update the countdown display
 function updateCountdownDisplay() {
-  document.getElementById('countdown').innerText = `Countdown: ${countdown} seconds`;
+  document.getElementById('countdown').innerText = `${countdown}`;
 }
 
 // Function to start the countdown and disable drawing after completion
@@ -30,7 +34,7 @@ function startCountdown() {
     if (countdown <= 0) {
       clearInterval(countdownInterval);
       stopDrawing();
-      document.getElementById('countdown').innerText = "Countdown Finished";
+      spotElement.classList.add("expanding");
       canvas.removeEventListener('mousedown', startDrawing);
       canvas.removeEventListener('mousemove', draw);
       canvas.removeEventListener('mouseup', stopDrawing);
@@ -101,6 +105,9 @@ function changeToColor2(){
 function changeToColor3(){
   context.strokeStyle = color3;
 }
+function changeToColor4(){
+  context.strokeStyle = color4;
+}
 function getRandomColor() {
   let red = Math.floor(Math.random() * 256);
   let green = Math.floor(Math.random() * 256);
@@ -111,16 +118,19 @@ function shuffleColor(){
   let colorButton1 = document.getElementById('color1');
   let colorButton2 = document.getElementById('color2');
   let colorButton3 = document.getElementById('color3');
+  let colorButton4 = document.getElementById('color4');
   let c1 = getRandomColor();
   let c2 = getRandomColor();
   let c3 = getRandomColor();
+  let c4 = getRandomColor();
   colorButton1.style.backgroundColor = c1;
   color1=c1;
   colorButton2.style.backgroundColor = c2;
   color2=c2;
   colorButton3.style.backgroundColor = c3;
   color3=c3;
-
+  colorButton4.style.backgroundColor = c4;
+  color4=c4;
 }
 function changeColor(color) {
   console.log(color);
@@ -172,6 +182,20 @@ canvas.addEventListener('mouseout', stopDrawing);
 
 // Start the countdown on page load
 startCountdown();
+
+// share img
+function copyText() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+
+}
 
 // Function to save the canvas as an image
 function saveCanvas() {

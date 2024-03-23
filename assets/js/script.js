@@ -1,3 +1,4 @@
+
 document.getElementById('startButton').addEventListener('click', redirectToGamePage);
 
 function redirectToGamePage() {
